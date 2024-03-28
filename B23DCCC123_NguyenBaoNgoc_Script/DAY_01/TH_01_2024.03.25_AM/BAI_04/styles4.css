@@ -1,0 +1,21 @@
+h3 {
+    color: aliceblue;
+}
+h3:hover{
+
+    color: blue;
+}
+table {
+background-color: rgb(125, 134, 141);
+
+}
+tr, td {
+    background-color: rgb(125, 134, 141);
+    padding: 10px;
+
+}
+
+tr, td:hover {
+    background-color: rgb(107, 111, 114)
+
+}

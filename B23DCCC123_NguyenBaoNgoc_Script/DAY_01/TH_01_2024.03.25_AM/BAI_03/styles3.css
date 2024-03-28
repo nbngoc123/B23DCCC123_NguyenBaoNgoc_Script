@@ -1,0 +1,29 @@
+
+
+.h11 {
+
+    color: rgb(143, 112, 172);
+    font-family: "sans-serif"; #lên gg brower tìm 
+}
+.h11:hover{
+    font-family: "sans-serif";
+    color: rgb(133, 214, 40)
+}
+td, tr {
+    border: 3px solid rgb(216, 45, 45);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+td:hover{
+    border: 3px solid rgb(216, 45, 202);
+
+}
+p {
+    color: brown;
+}
+p:hover{
+    color: blue;
+}

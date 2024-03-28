@@ -1,0 +1,55 @@
+.header0 {
+
+margin: 60px;    
+#text-align: center; căn theo row
+vertical-align: bottom;  căn theo colunm dùng trong bảng mang theo gt height
+padding: auto;
+
+font-family: "Fjalla One", sans-serif; #lên gg browser tìm
+font-weight: 400; # độ đậm vb
+font-style: italic; độ nghiên vb
+color: rgb(253, 59, 0);
+background-color: rgb(0, 26, 255);
+border-radius: 10px;
+
+
+border-bottom 
+
+
+}
+
+.fjalla-one-regular {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+table {
+border: 2px;
+text-align: left;
+border-radius: 5px;
+
+
+}
+
+td, tr, th {
+text-align: center;
+background-color: rgb(94, 92, 89);
+border-radius: 5px;
+padding: auto;
+border: 2px solid snow
+
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: auto;    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button :hover{
+    background-color: brown;
+}

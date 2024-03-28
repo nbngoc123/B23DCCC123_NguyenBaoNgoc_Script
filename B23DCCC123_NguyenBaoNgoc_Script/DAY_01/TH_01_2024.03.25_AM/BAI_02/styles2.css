@@ -1,0 +1,64 @@
+ul {
+    padding: 0;
+    list-style: none;
+    background: #04d416;
+    border-radius: 5px;
+}
+ul li {
+    display: inline-block;
+}
+ul li a {
+    display: block;
+    padding: 10px 5px;
+    color: #333333;
+    text-decoration: none;
+    font-size: larger;
+  
+}
+ul li a:hover {
+    color: #ffffff;
+    background: #53d34e;
+}
+#input0 {
+    position: relative;
+    left: 23cm;
+    bottom: 15px;
+}
+
+table {
+    border: 1px solid rgb(53, 51, 51);
+    text-align: left;
+    border-radius: 5px;
+    position: relative ;
+    
+
+
+}
+td, th, tr {
+    border: 1px solid rgb(53, 51, 51);
+    text-align: left;
+    padding: auto;
+    border-radius: 5px;
+    text-align: top;
+}
+.header {
+    color: #1707f1;
+    font-size: 10px;
+    text-align: left; /* căn lề trong 1 phần tử ngoài left right center còn có justify là căn đều */
+}
+
+li {
+font-size: large;
+
+}
+img {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+#input0 {
+border-radius: 20px;
+height: 1cm;
+}

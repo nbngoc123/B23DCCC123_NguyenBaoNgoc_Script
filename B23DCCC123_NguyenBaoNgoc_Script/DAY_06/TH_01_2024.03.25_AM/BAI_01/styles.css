@@ -1,0 +1,64 @@
+.header {
+    background-color: #4339d8;
+    color: #fff;
+    font-size: 10px;
+    text-align: left; /* căn lề trong 1 phần tử ngoài left right center còn có justify là căn đều */
+}
+
+.header0 {
+    background-color: #4c4c52;
+    color: #fff;
+    font-size: 10px;
+    text-align: left; /* căn lề trong 1 phần tử ngoài left right center còn có justify là căn đều */
+}
+
+#input0 {
+    position: relative;
+    margin-left: 80% ;    
+    border-radius: 150px;
+    height: 30px;
+}
+
+table {
+    border: 1px solid rgb(53, 51, 51);
+    text-align: left;
+    border-radius: 5px;
+    position: relative;
+    
+    
+
+
+}
+td, th, tr {
+    border: 1px solid rgb(53, 51, 51);
+    text-align: left;
+    padding: auto;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.he2 {
+    background-color: #4339d8;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.he3 {
+    color: #4339d8;
+}
+.bentrai {
+    top: 0;
+    left: 0
+    position: absolute;
+    
+}
+.benduoi {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+}
+
+
+

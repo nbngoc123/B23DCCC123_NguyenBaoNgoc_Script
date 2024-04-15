@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAI1</title>
+</head>
+<body>
+    <script>
+        var numbers = [66, 92, 4, 16, 55, 79, 40, 16, 25];
+
+        // Hàm số một
+        function sortNumbers(nums) {
+            return nums.slice().sort(function(a, b) {
+            return a - b;
+            });
+        }
+var result = sortNumbers(numbers);
+console.log(result); 
+
+        // Hàm số hai
+        function setNum(nums) {
+            var mySet = new Set(nums);
+            return mySet
+        }
+
+    </script>
+</body>
+</html>

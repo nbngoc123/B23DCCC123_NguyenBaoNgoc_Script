@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAI2</title>
+</head>
+<body>
+    <script>
+        // Cho một array bất kì 
+        var numbers = [100, -50, 93, 56, -43, 55, 66, -92, 4, 16, 55, -79, 40, 16, 25];
+
+        // Hàm tìm số nguyên lớn nhất(Yêu cầu số một)
+        function findMaxNumber(nums) {
+            var maxValue = Math.max(...numbers);
+            return maxValue
+        }
+console.log(findMaxNumber(numbers));
+
+
+        // Hàm tìm các số chính phương trong mảng(Yêu cầu số 2)
+        function findNumber(nums) {
+            var n = [];
+            for (let i = 0; i < nums.length; i++) { 
+                if (!isNaN(nums[i]) && nums[i] > 0) { 
+                    // check số có dương và khác không hay không và nếu số đó % cho
+                    // 1 mà bằng không thì thỏa mãn là số nguyên cũng thỏa mãn đề bài.
+                    var squareRoot = Math.sqrt(parseInt(nums[i]));
+                    if (squareRoot % 1 === 0) {
+                        n.push(squareRoot);
+                    }
+                }
+            }
+            return n;
+        }
+
+
+
+        // Hàm tìm các số lớn hơn trung bình cộng của mảng(Yêu cầu số 3)
+        function findSoTB(nums) {
+            // Tính tổng của tất cả các phần tử trong mảng
+            var sum = nums.reduce(function(acc, val) {
+                return acc + val;
+            }, 0);
+
+            // Tính số trung bình
+            var average = sum / nums.length;
+
+            // Tìm các số lớn hơn số trung bình
+            var result = nums.filter(function(num) {
+                return num > average;
+            });
+
+            return result;
+}
+var result3 = findSoTB(numbers);
+console.log(result3);
+
+
+
+        // hàm chính yêu cầu số bốn
+        function tinhSoTB(arr) {
+            function nonNegativeNumbers(arr) { // Hàm check số không âm
+                var nonNegative = arr.filter(function(num) {
+                    return num >= 0; 
+                });
+                return nonNegative;
+            }
+            // Hàm tính tổng số không âm của mảng
+            function computeAverage(numbers) {
+                for (let j = 0; j < arrayNew.length; j++) {
+                    sum += arrayNew[j]; 
+                }
+                return sum / numbers.length;
+            }
+
+            var sum = 0; // khởi tạo tổng ban đầu
+            var arrayNew = nonNegativeNumbers(arr); // hứng kết quả từ hàm check số không âm vào mảng arrayNew để hàm computeAverage xử lí
+
+            return computeAverage(arrayNew) // trả về kết quả sau khi hàm computeAverage đã xử lí
+        }
+var result4 = tinhSoTB(numbers);
+console.log(result4);
+    </script>
+</body>
+</html>

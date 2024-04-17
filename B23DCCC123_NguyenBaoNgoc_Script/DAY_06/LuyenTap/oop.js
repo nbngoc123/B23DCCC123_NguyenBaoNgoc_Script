@@ -1,7 +1,7 @@
-var des = "Trả nợ đi bạn ơi!!!"
+var des = "xin chào"
 alert(des)
 
-// var side1 = prompt("may la ai: ")
+// var side1 = prompt("Enter: ")
 // console.log(side1)
 
 function calculateVuong(side) {
@@ -28,24 +28,24 @@ function getShape(inp) {
 
 // switch (side1) {
 // 	case "hinhvuong":
-// 		console.log("may dinh tinh hinh vuong a");
+// 		console.log("hinh vuong");
 // 		break;
 // 	case "hinhtron":
-// 		console.log("may dinh tinh hinh tron a");
+// 		console.log(" hinh tron ");
 // 		break;
 // 	default:
-// 		console.log("may dinh an tao day a!");
+// 		console.log("no supported");
 
 // }
 
-var isClose = confirm("may muon vay tien them khong")
+var isClose = confirm("xac nhan")
 
 switch (isClose) {
 	case true:
-		console.log("mo di may con no tao hoi nhieu day");
+		console.log("t");
 		break;
 	default:
-		console.log("may no ma tra du no cho tao di");
+		console.log("m");
 
 }
 

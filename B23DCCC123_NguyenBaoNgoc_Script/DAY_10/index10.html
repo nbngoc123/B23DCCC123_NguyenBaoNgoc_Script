@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script10.js"></script>
+</head>
+<body>
+
+
+    <h1>b1</h1>
+    <input id="value" type="password" vaulue="">
+    <button class="hide">hide</button>
+    <button class="occu">occur</button>
+
+    <div id="text"></div>
+        <script>
+            $('.hide').click(function()
+            {
+            $('#value').attr('type', 'password');
+            });
+
+            $('.occu').on('click', function()
+            {
+            $('#value').attr('type', 'text');
+            });
+                    
+        </script>
+
+<h1>Add</h1>
+<input id="value" type="text" vaulue="">
+<button class="add">Thêm nhiệm vụ</button>
+
+<div id="text1"></div>
+    <script>
+        $('.add').click(function()
+        {
+
+
+        });
+        $('#text1').on('click', '.task', function() {
+            $('#text').append('<p class="task">sdafsfsfas</p>');
+        })
+    </script>
+
+</body>
+</html>

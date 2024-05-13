@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra</title>
+</head>
+<body>
+<script>
+// Hàm tính toán theo dấu
+function tinh(operator) {
+    // bước lấy các giá trị từ ô input
+    var num1 = parseFloat(document.getElementById('num1').value)
+    var num2 = parseFloat(document.getElementById('num2').value)
+    
+    // bước tính toán
+    var result
+    switch(operator) {
+        case '+':
+            result = num1 + num2
+            break
+        case '-':
+            result = num1 - num2
+            break
+        case '*':
+            result = num1 * num2
+            break
+        case '/':
+            // điều kiện mẫu số phải khác 0 thì mới tính nếu không sẽ báo lỗi
+            if (num2 === 0) {
+                document.getElementById('result').innerHTML = "Lỗi giá trị 0!!! vui lòng nhập lại giá trị khác 0"
+                return
+            }
+            result = num1 / num2
+            break
+        default:
+            result = "error operator"
+    }   
+
+    // hiện kết quả
+    document.getElementById('result').innerHTML = "Kết quả của phép tính là:" + result
+}
+
+    // hàm reset value
+    function reset() {
+        document.getElementById('num1').value = ""
+        document.getElementById('num2').value = ""
+        document.getElementById('result').innerHTML = ""
+
+    }
+</script>
+
+
+
+    <h2>Nhập dữ liệu</h2>
+    <input type="number" id="num1" placeholder="Nhập số thứ nhất"></input>
+    <input type="number" id="num2" placeholder="Nhập số thứ hai"></input>
+
+    <button onclick="tinh('+')">+</button>
+    <button onclick="tinh('-')">-</button>
+    <button onclick="tinh('*')">*</button>
+    <button onclick="tinh('/')">/</button>
+    <button onclick="reset()">RESET</button>
+
+    <h2 id="result"></h2>
+
+</body>
+</html>

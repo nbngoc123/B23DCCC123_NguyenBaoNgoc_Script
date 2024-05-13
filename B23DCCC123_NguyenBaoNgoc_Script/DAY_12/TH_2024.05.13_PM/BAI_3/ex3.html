@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<title>thực hành cùng JS</title>
+<script>
+    $(document).ready(function() {
+        // Gắn sự kiện click vào tất cả các nút
+        $("button").on("click", function() {
+        });
+
+        // Gắn sự kiện input vào ô input có id là "myInput"
+        $("#myInput").on("input", function() {
+            var inputValue = $(this).val();
+            console.log("Giá trị ô input:", inputValue);
+        });
+    });
+
+
+</script>
+</head>
+<body>
+    <div id="content">
+    <img src="" alt=""></img>
+    </div>
+</body>
+</html>

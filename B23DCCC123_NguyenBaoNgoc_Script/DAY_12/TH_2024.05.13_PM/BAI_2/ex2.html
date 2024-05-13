@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<title>thực hành cùng JS</title>
+<script>
+    $(document).ready(function() {
+        // Gắn sự kiện click vào button (chỉ một lần)
+        $("button").click(function() {
+            // Lấy giá trị hiện tại của ô input
+            var inputValue = $("#myInput").val();
+
+            // Thêm mục mới vào đầu danh sách
+            $(".mylist").prepend(`<li>${inputValue}</li>`);
+
+            // Xóa giá trị của ô input
+            $("#myInput").val("");
+        });
+        $("#myInput").on("input", function() {
+            var inputValue = $(this).val();
+            console.log("Giá trị ô input:", inputValue);
+        });
+    });
+
+</script>
+</head>
+<body>
+    <div id="content">
+        <h1>List item</h1>
+        <list class="mylist">
+        </list>
+    </div>
+        <input type="text" id="myInput" placeholder="New item"></input>
+        <br><br>
+        <button type="button">ADD</button>
+</body>
+</html>
